@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mathematics CBT</title>
+
+  <style>
+    @media screen and (max-width: 600px) {
+      .page {
+        padding: 16px !important;
+      }
+
+      .exam-card {
+        margin: 10px auto !important;
+        padding: 18px 12px !important;
+      }
+
+      #choices {
+        font-size: 1rem !important;
+      }
+
+      .question-box {
+        padding: 14px !important;
+      }
+    }
+  </style>
+</head>
+
+<body style="margin: 0; font-family: Arial, sans-serif;">
+  <div class="page" style="min-height: 100vh; padding: 30px 16px; background: #f1f1f1cc url('./BG.png') center / cover fixed;">
+
+    <main class="exam-card" style="max-width: 850px; margin: 60px auto; padding: 25px; background: white; border-radius: 10px; box-shadow: 0 3px 12px #999; text-align: center;">
+
+
+      <h3>NAME: <span id="userName"></span></h3>
+      <p style="color: #555;">EXAM NO: <span id="userExam"></span></p>
+
+      <div id="clock" style="width: 280px; max-width: 100%; margin: 20px auto; padding: 12px; border-radius: 5px; background: purple; color: white; font-weight: bold;">
+        00 : 30 : 00
+      </div>
+
+      <a href="./selection.html"><button style="padding: 10px 18px; border: 0; border-radius: 5px; background: purple; color: white; cursor: pointer;">
+        SUBJECT
+      </button></a>
+
+      <button onclick="submitQuiz()" style="padding: 10px 18px; border: 0; border-radius: 5px; background: purple; color: white; cursor: pointer;">
+        FINISH
+      </button>
+      <button onclick="start3()" style="padding: 10px 18px; border: 0; border-radius: 5px; background: purple; color: white; cursor: pointer;">
+        START
+      </button>
+       <button onclick="pauseTime()" style="padding: 10px 18px; border: 0; border-radius: 5px; background: purple; color: white; cursor: pointer;">
+        PAUSE
+      </button>
+
+      <div style="max-width: 400px; margin: 20px auto; padding: 10px; border-radius: 4px; background: purple; color: white;">
+        Course / Subject: MATHEMATICS
+      </div>
+
+      <section class="question-box" style="min-height: 250px; padding: 20px; border: 1px solid #ccc; border-radius: 15px;">
+        <h2 id="question" style="margin-bottom: 25px;"></h2>
+        <div id="choices" style="font-size: 1.2rem; text-align: left;"></div>
+
+        <div style="display: flex; justify-content: center; gap: 12px; margin-top: 35px; flex-wrap: wrap;">
+          <button onclick="previous()" style="padding: 10px 18px; border: 0; border-radius: 5px; background: purple; color: white; cursor: pointer;">
+            ‹ PREV
+          </button>
+          <button onclick="next()" style="padding: 10px 18px; border: 0; border-radius: 5px; background: purple; color: white; cursor: pointer;">
+            NEXT ›
+          </button>
+        </div>
+
+        <p id="score"></p>
+      </section>
+
+      <p style="margin-top: 30px; color: gray; font-size: 12px; text-align: right;">
+        © 2026 (WACKOTHUG)
+      </p>
+    </main>
+  </div>
+
+  <script src="./front.js"></script>
+</body>
+</html>

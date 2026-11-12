@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CBT WEBSITE</title>
+<link href="./style.css">
+</head>
+<body>
+    <style>
+        @media (max-width: 768px) {
+  body > div {
+    min-height: 100vh;
+    height: auto !important;
+    background-size: cover;
+    background-position: center;
+  }
+
+  body > div > div > div {
+    width: 90% !important;
+    height: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  body > div > div > div p,
+  body > div > div > div h4 {
+    margin-left: 0 !important;
+  }
+
+  body > div > div > div p:first-child {
+    font-size: 1.4rem !important;
+  }
+
+  body > div > div > div > div > button {
+    margin-left: 0 !important;
+    font-size: 1rem !important;
+  }
+
+  body > div > div > div > div > button:last-child {
+    float: right;
+  }
+}
+</style>
+<div id="" style="background-image: url(./BG.png); height: 100vh;">
+<div style="padding-top: 100px;">
+<div style="background-color: white; height: 450px; width: 700px;margin-left: 500px;">
+<p style="font-size: 2rem; margin-left: 150px; display: flex; justify-content: center;">
+
+      <h3 style="display: flex; justify-content: center;">NAME: <span id="userName"></span></h3>
+      <p style="color: #555; display: flex;justify-content: center;">EXAM NO: <span id="userExam"></span></p>
+
+</p>
+<!-- <p style="font-size: 1rem; margin-left: 150px;">EXAM NO:<span id="userExam"></span></p> -->
+<h4 style=" margin-left: 150px;color: red;">READ THESE INSTRUCTIONS CAREFEULLY !</h4>
+<h4 style=" margin-left: 150px;color: black">1 Do not try to logout until you finish your examination </h4>
+<h4 style=" margin-left: 150px;color: black">2 Do not waste your time as time is againt you... Best of luck!!! </h4>
+<h4 style=" margin-left: 150px;color: black">3 Cheating is prohibited,No form of illegal malpratice </h4>
+<h4 style=" margin-left: 150px;color: black">4 You will be automatically logged out when your time elapsed </h4>
+<h4 style=" margin-left: 150px;color: black">5 Enjoy and attempt all questions at samad cbt examination </h4>
+  
+
+
+
+      <div id="logdiv2" style="margin-top: 30px;">
+        <a href="./cancel.html"><button style="width: 90px; margin-left: 20px;background-color: red;font-size: 20px;">CANCEL</button></a>
+<button  style="width: 80px; margin-left: 500px;background-color: green;font-size: 20px;" onclick="window.location.href='selection.html'">START</button>
+
+      </div>
+
+      
+
+
+
+</div>
+</div>
+
+</div>
+<script src="./front.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CBT Subjects</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 32px 20px;
+      background: url("./BG.png") center / cover no-repeat;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      margin: 0 0 24px;
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+    }
+
+    .subjects {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .subjects button {
+      min-height: 100px;
+      padding: 16px;
+      border: 2px solid #6478ff;
+      border-radius: 15px;
+      background: #202b49;
+      color: white;
+      font-size: clamp(1rem, 1.5vw, 1.25rem);
+      cursor: pointer;
+    }
+
+    .subjects button:hover {
+      transform: scale(1.03);
+    }
+
+    @media screen and (max-width: 600px) {
+      body {
+        padding: 24px 16px;
+      }
+
+      .subjects {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .subjects button {
+        min-height: 72px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>SELECT SUBJECT</h2>
+
+  <main class="subjects">
+    <button onclick="location.href='mathematics.html'">∑ Mathematics</button>
+    <button onclick="location.href='english.html'">A English</button>
+    <button onclick="location.href='physics.html'">⚡ Physics</button>
+    <button onclick="location.href='chemistry.html'">⚗ Chemistry</button>
+  </main>
+   <p style="margin-top: 30px; color:white; font-size: 12px;">
+        © 2026 (WACKOTHUG)
+      </p>
+</body>
+</html>
+

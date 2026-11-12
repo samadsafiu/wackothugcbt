@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  #indbrb,
+  #indiv,
+  #indiv3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #indback {
+    background-size: cover;
+    background-position: center;
+  }
+
+  #inimg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #inbtn {
+    max-width: 100%;
+  }
+}

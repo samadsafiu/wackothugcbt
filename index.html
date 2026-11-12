@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CBT WEBSITE</title>
+<link rel="stylesheet" href="./style.css">
+
+<style>
+ * {
+  box-sizing: border-box;
+}
+
+#indback {
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+#indbrb,
+#indiv,
+#indiv3 {
+  width: min(324px, calc(100% - 32px)) !important;
+  margin-left: auto !important;
+  margin-right: auto;
+}
+
+#inimg {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 480px) {
+  #indbrb {
+    height: 70px;
+  }
+
+  #inhr {
+    font-size: 1.6rem !important;
+  }
+
+  #indiv {
+    height: 130px;
+  }
+
+  #indiv2 {
+    height: 130px !important;
+    margin-top: 25px !important;
+  }
+
+  #indiv3 {
+    height: 170px;
+  }
+
+  #inbtn {
+    width: 180px !important;
+    height: 80px !important;
+    margin-top: 40px !important;
+    font-size: 1.7rem !important;
+  }
+}
+</style>
+</head>
+<body>
+<div id="indback" style="background-image: url(./BG.png); height: 100vh;">
+<div style="padding-top: 50px;"></div>
+
+<div id="indbrb" style="background-color: purple; height: 75px; width: 324px; display: flex; justify-content: center; margin-left: 650px;">
+<h1 id="inhr" style="font-size: 2rem; color: white; font-family: 'Courier New', Courier, monospace;">WELCOME</h1>
+</div>
+<div id="indiv" style="background-color: white; height: 150px; width: 324px; display: flex; justify-content: center; margin-left: 650px;">
+ <div id="indiv2" style="display:flex; justify-content: center; height: 150px; margin-top: 40px;">
+<img id="inimg" src="./logo 1.png" style=" padding-left: 20px;">
+ </div>
+</div>
+<div id="indiv3" style="background-color: white; height: 200px; width: 324px; display: flex; justify-content: center; margin-left: 650px;">
+ <div id="indiv4" style="display:flex; justify-content: center; height: 150px;">
+<a href="./login.html"><button id="inbtn" style="width: 200px; height: 100px; margin-top: 50px;background-color: blueviolet; border-radius: 20px;font-size: 2rem; color: white;">START</button></a>
+
+
+
+</div>
+
+</div>
+
+
+</div>
+<p style="margin-top: 30px; color: gray; font-size: 12px; text-align: right;">
+        © 2026 (WACKOTHUG)
+      </p>
+<script src="./front.js"></script>
+</body>
+</html>
