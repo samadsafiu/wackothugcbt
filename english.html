@@ -6,24 +6,49 @@
   <title>Mathematics CBT</title>
 
   <style>
+
     @media screen and (max-width: 600px) {
-      .page {
-        padding: 16px !important;
-      }
+  .page {
+    min-height: 100vh;
+    padding: 12px !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-size: cover !important;
+  }
 
-      .exam-card {
-        margin: 10px auto !important;
-        padding: 18px 12px !important;
-      }
+  .exam-card {
+    margin: 16px auto !important;
+    padding: 18px 12px !important;
+  }
 
-      #choices {
-        font-size: 1rem !important;
-      }
+  .exam-card > a,
+  .exam-card > button {
+    display: inline-block;
+    box-sizing: border-box;
+    width: calc(50% - 8px);
+    margin: 4px 2px;
+    padding: 10px 6px !important;
+    font-size: 0.85rem;
+  }
 
-      .question-box {
-        padding: 14px !important;
-      }
-    }
+  .exam-card > a button {
+    width: 100%;
+    margin: 0;
+  }
+
+  #clock {
+    width: auto !important;
+  }
+
+  #choices {
+    font-size: 1rem !important;
+  }
+
+  .question-box {
+    min-height: 0 !important;
+    padding: 14px !important;
+  }
+}
   </style>
 </head>
 
